@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login - Raffle App</title>
+  <script defer src="app.js"></script>
+  <script type="module" src="firebase.js"></script>
+</head>
+<body>
+  <div>
+    <h1>Login or Register</h1>
+    <input type="email" id="email" placeholder="Email" />
+    <input type="password" id="password" placeholder="Password" />
+    <button onclick="register()">Register</button>
+    <button onclick="login()">Login</button>
+  </div>
+  <div id="dashboard" style="display:none;">
+    <h2>Welcome! Enter your Ticket</h2>
+    <input type="text" id="ticketName" placeholder="Name" />
+    <input type="text" id="ticketNumber" placeholder="Ticket Number" />
+    <button onclick="saveTicket()">Save Ticket</button>
+    <h3>Your Tickets</h3>
+    <ul id="ticketList"></ul>
+  </div>
+</body>
+</html>
